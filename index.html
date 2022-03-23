@@ -7,15 +7,16 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Bellybutton Biodiversity</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./styles.css">
 </head>
 
-<body>
+<body class="body">
 
   <div class="container">
     <div class="row">
-      <div class="col-md-12 jumbotron text-center">
-        <h1>Belly Button Biodiversity Dashboard</h1>
-        <p>Use the interactive charts below to explore the dataset</p>
+      <div id="header" class="col-md-12 jumbotron text-center" style="background-image: url(./resources/bg_img.jpeg)";>
+          <h1 id="pageHeader">Belly Button<br> Biodiversity Dashboard</h1>
+          <p>Use the interactive charts below to explore the dataset</p>
       </div>
     </div>
     <div class="row">
@@ -39,6 +40,33 @@
         <div id="gauge"></div>
       </div>
     </div>
+    <div class="container backgrou-dark">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="panel panel-default">
+            <div class="panel-heading"><h3 class="panel-title">What is Bacterial OTU?</h3></div>
+            <div id="otuDesc" class="panel-body">
+              <b>Operational taxonomic unit</b> or OTU is considered as the basic unit used in numerical taxonomy. These units may refer to an individual, species, genus, or class. In numerical methods, the taxonomic units used are constantly not comparable to the formal taxonomic units.<br>
+              <p style="margin-top: 3%;">Read more about Bacterial OTU <a href="https://www.cd-genomics.com/microbioseq/operational-taxonomic-unit-otu-and-otu-clustering.html#:~:text=Operational%20taxonomic%20unit%20or%20OTU,to%20the%20formal%20taxonomic%20units.">Here</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 id="dirtyNavel" class="panel-title">Do I Have a Dirty Belly Button?</h3>
+            </div>
+            <div class="panel-body">
+              When taking care of personal hygiene, we don’t often think about our bellybuttons. But just like the rest of your body, they need to be cleaned. In fact, a 2012 studyTrusted Source found that 67 different types of bacteria are in the average bellybutton.
+
+Most bellybuttons have crevices that can collect dirt and breed bacteria. Aim to clean yours about once a week.<br>
+              <p style="margin-top: 2%;">Read more on how to clean your navel <a href="https://www.healthline.com/health/dirty-belly-button#:~:text=But%20just%20like%20the%20rest,yours%20about%20once%20a%20week.">here</a></p>
+            </div>
+          </div>
+        </div>
+        
+      </div> 
+    </div> 
     <div class="row">
       <div class="col-md-12">
         <div id="bubble"></div>
@@ -48,7 +76,9 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.1.0/chroma.min.js"></script>
   <script src="./js/charts.js"></script>
+  
 
 </body>
 
